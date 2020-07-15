@@ -8,6 +8,11 @@ export const Form = styled.form`
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px){
+        height: 200px;
+        margin-top: 4rem;
+    }
 `
 
 export const FormTitle = styled.h1`
