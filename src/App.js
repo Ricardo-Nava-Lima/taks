@@ -29,6 +29,7 @@ function App() {
 
         <ListTasks 
           tasks={ tasks }
+          dispatch={ dispatch }
         />
       </div>
     </>
