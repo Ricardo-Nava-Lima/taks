@@ -29,12 +29,13 @@ body {
 
 .task-item{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 80%;
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
   background-color: #fff;
   padding: 1.4rem;
   border-radius: 5px;
@@ -52,3 +53,6 @@ body {
   cursor: pointer;
 }
 
+.complete{
+  text-decoration: line-through;
+}
