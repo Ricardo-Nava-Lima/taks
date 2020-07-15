@@ -11,3 +11,44 @@ body {
   text-align: center;
   color: #fff;
 }
+
+.error{
+  background-color: #9c2c2c;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+/*  ESTILOS PARA LAS TAREAS */
+.task-list{
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+  padding: 2rem;
+}
+
+.task-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 1.4rem;
+  border-radius: 5px;
+}
+
+
+.delete{
+  padding: .5rem;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9c2c2c;
+  color: #fff;
+
+  cursor: pointer;
+}
+
