@@ -1,7 +1,7 @@
 import React from 'react';
 import Task from './Task';
 
-const ListTasks = ({ tasks }) => {
+const ListTasks = ({ tasks, dispatch }) => {
     
     return (
         <ul className="task-list">
@@ -9,6 +9,7 @@ const ListTasks = ({ tasks }) => {
                 <Task 
                     key={ task.id}
                     task={ task }
+                    dispatch={ dispatch }
                 />
             )) }
         </ul>
