@@ -3,9 +3,9 @@ import { useForm } from '../../hooks/useForm';
 import { Form, FormTitle, Fields, Submit } from './Form';
 import { useState } from 'react';
 
-const FormNewTask = () => {
+const FormNewTask = ({ dispatch }) => {
 
-    const [ value, handleInputChange ] = useForm('');
+    const [ value, handleInputChange, resetForm ] = useForm('');
     const [ error, setError ] = useState(false);
 
     const handleSubmit = e => {
@@ -15,8 +15,21 @@ const FormNewTask = () => {
             setError(true);
             return
         }
-
+        
         setError(false);
+
+        const newTask = {
+            id: new Date().getTime(),
+            task: value,
+            done: false
+        }
+
+        dispatch( {
+            type: 'ADD_TASK',
+            payload: newTask
+        });
+        
+        resetForm();
     }
     return (
         <Form
