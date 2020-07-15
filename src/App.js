@@ -22,7 +22,9 @@ function App() {
       <h1 className="title">Lista de Tareas ( { tasks.length } )</h1>
 
       <div className="container">
-        <FormNewTask />
+        <FormNewTask 
+          dispatch= { dispatch }
+        />
 
         <ListTasks 
           tasks={ tasks }
