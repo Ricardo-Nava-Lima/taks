@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect } from 'react';
 import { tasksReducer } from './reducers/tasksReducer';
-import FormNewTask from './components/Form/FormNewTask';
-import ListTasks from './components/Tasks/ListTasks';
+import FormNewTask from './components/form/FormNewTask';
+import ListTasks from './components/tasks/ListTasks';
 
 
 const init = () => {

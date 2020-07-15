@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from '../../hooks/useForm';
 import { Form, FormTitle, Fields, Submit } from './Form';
-import { useState } from 'react';
 
 const FormNewTask = ({ dispatch }) => {
 
