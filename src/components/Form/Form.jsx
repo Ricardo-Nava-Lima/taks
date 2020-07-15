@@ -3,11 +3,15 @@ import styled from '@emotion/styled'
 export const Form = styled.form`
     max-width: 600px;
     width: 95%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
 `
 
 export const FormTitle = styled.h1`
+    margin-top: 0;
     text-align: center;
     font-size: 2rem;
 `
@@ -26,6 +30,7 @@ export const Fields = styled.div`
         border: 1px solid #e1e1e1;
         border-radius: 3px;
         padding: .6rem;
+        outline-color: #4364F7;
     }
 `
 
@@ -34,7 +39,7 @@ export const Submit = styled.button`
     border: none;
     border-radius: 3px;
     padding: .6rem;
-    background-color: orangered;
+    background-color: #4364F7;
     color: #fff;
 `
 
