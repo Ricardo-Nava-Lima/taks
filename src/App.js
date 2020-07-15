@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <h1 className="title">Lista de Tareas</h1>
+      <h1 className="title">Lista de Tareas ( { tasks.length } )</h1>
 
       <div className="container">
         <FormNewTask />
