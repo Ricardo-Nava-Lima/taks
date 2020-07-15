@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Task = () => {
+const Task = ({ task }) => {
     return (
-        <p>Desde task</p>
+        <>
+            <li className="task-item">
+                { task.task }
+                <button className="delete">Borrar</button>
+            </li>
+        </>
     );
 }
 
